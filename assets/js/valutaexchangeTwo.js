@@ -38,10 +38,12 @@ function showResult(myEuroResult, myDollarResult, myDanishAmount) {
 
 }
 
-/* skriv din kode herunder.
+//* skriv din kode herunder.//
+function gatherInputData() {
+    const myEuroRate = document.getElementById('euroRate').value;
+    const myDollarRate = document.getElementById('dollarRate').value;
 
+    const myDanishAmount = document.getElementById('danishAmount').value;
 
-
-
-
-
+    makeExchange(myEuroRate, myDollarRate, myDanishAmount);
+}
